@@ -29,5 +29,4 @@ def translate_text(api_key, text, target_language):
 
     return translation
 
-if __name__ == "__main__":
-    app.run()
+
