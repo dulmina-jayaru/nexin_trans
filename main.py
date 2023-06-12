@@ -1,7 +1,7 @@
 from flask import Flask
 from googletrans import Translator
 
-def main_app():
+def create_app():
     app = Flask(__name__)
 
     # Read API keys from apis.txt file
@@ -30,4 +30,9 @@ def main_app():
 
         return translation
 
+    return app
 
+app = create_app()
+
+if __name__ == "__main__":
+    app.run()
